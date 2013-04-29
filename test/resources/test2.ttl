@@ -1,0 +1,51 @@
+# Exported with the Erfurt API - http://aksw.org/Projects/Erfurt
+
+@base <http://aksw.org/> .
+@prefix sysont: <http://ns.ontowiki.net/SysOnt/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix sioc: <http://rdfs.org/sioc/ns#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix aksw: <http://aksw.org/schema/> .
+@prefix people: <http://aksw.org/> .
+@prefix v: <http://www.w3.org/2006/vcard/ns#> .
+@prefix partner: <http://aksw.org/Partner/> .
+@prefix content: <http://purl.org/rss/1.0/modules/content/> .
+@prefix site: <http://ns.ontowiki.net/SysOnt/Site/> .
+@prefix lod2: <http://lod2.eu/schema/> .
+@prefix void: <http://rdfs.org/ns/void#> .
+@prefix groups: <http://aksw.org/Groups/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix dbpedia: <http://dbpedia.org/resource/> .
+@prefix projects: <http://aksw.org/Projects/> .
+@prefix doap: <http://usefulinc.com/ns/doap#> .
+@prefix sioct: <http://rdfs.org/sioc/types#> .
+@prefix aiiso: <http://purl.org/vocab/aiiso/schema#> .
+@prefix ov: <http://open.vocab.org/terms/> .
+@prefix ns0: <http://139.18.2.164:4444/demo/> .
+@prefix ns1: <http://139.18.2.164:8080/> .
+@prefix ns2: <http://autosparql.dl-learner.org/app/#> .
+@prefix ns3: <http://> .
+@prefix ns4: <http://nlp2rdf.lod2.eu/> .
+@prefix vs: <http://www.w3.org/2003/06/sw-vocab-status/ns#> .
+@prefix schema: <http://schema.org/> .
+@prefix label: <http://purl.org/net/vocab/2004/03/label#> .
+@prefix geo: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix ns5: <http://www.nittka.de/index_e.html#> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix ns6: <http://vocab.ox.ac.uk/projectfunding#> .
+@prefix umbel: <http://umbel.org/umbel#> .
+
+projects:AKSWorg aksw:hookline "a linked data driven web page rendered by OntoWiki site extension" ;
+                 aksw:relatedProject projects:OntoWiki ;
+                 ov:screenshot <http://lh4.ggpht.com/-kXpKMqBBCIU/Tpx45SUaItI/AAAAAAAAA9w/aPYaNQjcpvo/s800/ontowiki.png> ;
+                 dcterms:abstract "The semantic data wiki OntoWiki can be used as a content management system to render web pages based on the RDF triples. According to 'eat you own dog food', the aksw.org web page is an example for this approach." ;
+                 doap:browse <https://github.com/AKSW/aksw.org> ;
+                 doap:bug-database <https://github.com/AKSW/aksw.org/issues> ;
+                 doap:maintainer people:SebastianTramp ;
+                 a aksw:IncubatorProject ;
+                 rdfs:label "aksw.org" ;
+                 foaf:homepage <http://aksw.org> .

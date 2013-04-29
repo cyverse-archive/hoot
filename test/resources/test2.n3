@@ -1,0 +1,35 @@
+<http://bibleontology.com/data/Dan?output=nt> <http://www.w3.org/2000/01/rdf-schema#label> "RDF description of Dan" .
+<http://bibleontology.com/data/Dan?output=nt> <http://xmlns.com/foaf/0.1/primaryTopic> <http://bibleontology.com/resource/Dan> .
+<http://bibleontology.com/resource/Dan> <http://bibleontology.com/property/hasSiblings> <http://bibleontology.com/resource/Joseph> .
+<http://bibleontology.com/resource/Dan> <http://bibleontology.com/property/explanation> "\"Dan\" as his stage name Dan (Bible), one of the sons of Jacob."^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://bibleontology.com/resource/Dan> <http://bibleontology.com/property/isRelatedInEvent> <http://bibleontology.com/resource/Jacob_Family_Move_to_Egypt> .
+<http://bibleontology.com/resource/Dan> <http://bibleontology.com/property/hasSiblings> <http://bibleontology.com/resource/Levi> .
+<http://bibleontology.com/resource/Dan> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://bibleontology.com/class/Biblical_Figures> .
+<http://bibleontology.com/resource/Dan> <http://www.w3.org/2000/01/rdf-schema#label> "Dan" .
+<http://bibleontology.com/resource/Dan> <http://www.w3.org/2004/02/skos/core#prefLabel> "Dan"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://bibleontology.com/resource/Dan> <http://bibleontology.com/property/hasSiblings> <http://bibleontology.com/resource/Zebulun> .
+<http://bibleontology.com/resource/Dan> <http://bibleontology.com/property/hasSiblings> <http://bibleontology.com/resource/Benjamin> .
+<http://bibleontology.com/resource/Dan> <http://bibleontology.com/property/hasSiblings> <http://bibleontology.com/resource/Reuben> .
+<http://bibleontology.com/resource/Dan> <http://www.w3.org/2002/07/owl#sameAs> <http://dbpedia.org/page/Dan_(Bible)> .
+<http://bibleontology.com/resource/Dan> <http://bibleontology.com/property/explanation> "The founder of the tribe of Dan"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://bibleontology.com/resource/Dan> <http://purl.org/vocab/frbr/extended#hasPartManifestation> <http://en.wikipedia.org/wiki/Dan_(Bible)> .
+<http://bibleontology.com/resource/Dan> <http://bibleontology.com/property/relatedChapters> "Book of Genesis Chapter 30 and 49"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://bibleontology.com/resource/Dan> <http://bibleontology.com/property/belongsInPeriod> <http://bibleontology.com/resource/Tribal_Patriarch_Period> .
+<http://bibleontology.com/resource/Dan> <http://bibleontology.com/property/hasSiblings> <http://bibleontology.com/resource/Judah> .
+<http://bibleontology.com/resource/Dan> <http://bibleontology.com/property/meaningOfNames> "(\"judgement\" or \"he judged\")"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://bibleontology.com/resource/Dan> <http://bibleontology.com/property/hasSiblings> <http://bibleontology.com/resource/Simeon> .
+<http://bibleontology.com/resource/Dan> <http://bibleontology.com/property/hasSiblings> <http://bibleontology.com/resource/Naphtali> .
+<http://bibleontology.com/resource/Dan> <http://bibleontology.com/property/gender> "male"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://bibleontology.com/resource/Dan> <http://bibleontology.com/property/explanation> "According to the Book of Genesis, Dan was the fifth son of Jacob with Bilhah. He was Bilhah's first son. He was the founder of the Israelite Tribe of Dan. In the biblical account, Dan's mother is described as Rachel's handmaid, who becomes one of Jacob's wives. (Genesis 30:4,6)"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://bibleontology.com/resource/Dan> <http://bibleontology.com/property/figuresInBook> <http://bibleontology.com/resource/Book_of_Genesis> .
+<http://bibleontology.com/resource/Dan> <http://bibleontology.com/property/hasTags> "\uB2E8"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://bibleontology.com/resource/Dan> <http://bibleontology.com/property/hasSiblings> <http://bibleontology.com/resource/Dinah> .
+<http://bibleontology.com/resource/Dan> <http://bibleontology.com/property/hasParents> <http://bibleontology.com/resource/Bilhah> .
+<http://bibleontology.com/resource/Dan> <http://bibleontology.com/property/isBornIn> <http://bibleontology.com/resource/Paddan_Aram> .
+<http://bibleontology.com/resource/Dan> <http://bibleontology.com/property/isRelatedInEvent> <http://bibleontology.com/resource/Joseph_sold_to_Egypt> .
+<http://bibleontology.com/resource/Dan> <http://bibleontology.com/property/hasSiblings> <http://bibleontology.com/resource/Issachar> .
+<http://bibleontology.com/resource/Dan> <http://bibleontology.com/property/hasParents> <http://bibleontology.com/resource/Jacob> .
+<http://bibleontology.com/resource/Dan> <http://bibleontology.com/property/hasSiblings> <http://bibleontology.com/resource/Asher> .
+<http://bibleontology.com/resource/Dan> <http://bibleontology.com/property/explanation> "Symbol of the tribe: snake"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://bibleontology.com/resource/Dan> <http://bibleontology.com/property/hasSiblings> <http://bibleontology.com/resource/Gad> .
+<http://bibleontology.com/resource/Dan> <http://www.w3.org/2004/02/skos/core#prefLabel> "\uB2E8"^^<http://www.w3.org/2001/XMLSchema#string> .
