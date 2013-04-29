@@ -24,3 +24,15 @@
 (fact (statements m1) => (has every? #(contains? % :predicate)))
 (fact (statements m1) => (has every? #(contains? % :object)))
 
+(fact (query->model m1 {:subject "<http://bibleontology.com/resource/Dan>"}) => 
+      #(instance? Model %))
+
+(fact (query->maps m1 {:subject "<http://bibleontology.com/resource/Dan>"}) =>
+      (has every? #(contains? % :subject)))
+
+(fact (query->maps m1 {:subject "<http://bibleontology.com/resource/Dan>"}) =>
+      (has every? #(contains? % :predicate)))
+
+(fact (query->maps m1 {:subject "<http://bibleontology.com/resource/Dan>"}) =>
+      (has every? #(contains? % :object)))
+
