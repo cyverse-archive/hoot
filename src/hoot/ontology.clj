@@ -2,11 +2,14 @@
   (:require [cemerick.url :as url])
   (:import [com.hp.hpl.jena.ontology OntDocumentManager OntModel OntModelSpec]))
 
+(defn ontology-manager
+  []
+  (OntDocumentManager/getInstance))
+
 (defn ontology
-  ([uri]
-    (ontology uri OntModelSpec/OWL_DL_MEM))
-  ([uri spec]
-    (.getOntology (OntDocumentManager/getInstance) uri spec)))
+  [ontman path model]
+  (.addModel ontman path model true)
+  (.getOntology ontman path OntModelSpec/OWL_DL_MEM))
 
 (defn imported-uris
   "Lists the imported ontology URIs. If transitive? is false (the default)

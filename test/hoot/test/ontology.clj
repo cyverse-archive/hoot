@@ -1,12 +1,15 @@
 (ns hoot.test.ontology
   (:use [hoot.ontology] :reload)
+  (:use [hoot.rdf])
   (:use [midje.sweet]
         [clojure.java.io :as io])
   (:import [com.hp.hpl.jena.ontology OntProperty OntModel OntModelSpec OntClass]))
 
-(fact (ontology "test/resources/shakespeare.owl") => #(instance? OntModel %))
+(def testpath "test/resources/shakespeare.owl")
 
-(def m1 (ontology "test/resources/shakespeare.owl"))
+(fact (ontology (ontology-manager) testpath (model (io/input-stream testpath))) => #(instance? OntModel %))
+
+(def m1 (ontology (ontology-manager) testpath (model (io/input-stream testpath))))
 
 (fact (classes m1) => (has every? #(instance? OntClass %)))
 
