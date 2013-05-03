@@ -38,6 +38,11 @@
         localname (:localname cls-map)]
     (.createClass ont (str (assoc (url/url namespace) :anchor localname)))))
 
+(defn uri->class
+  "Turns a URI into a OntClass object."
+  [ont uri]
+  (.getOntClass ont uri))
+
 (defn classes
   "Lists all of the classes in the ontology. Classes are the types of the things
    defined in the ontology."
