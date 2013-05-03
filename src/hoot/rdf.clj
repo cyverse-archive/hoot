@@ -37,6 +37,15 @@
     (.createProperty model predicate)
     object))
 
+(defn str-repr
+  [obj]
+  (cond
+    (.isAnon obj)        (.getLabelString (.getId (.asResource obj)))
+    (.isLiteral obj)     (.getLexicalForm (.asLiteral obj))
+    (.isURIResource obj) (str (.getURI (.asResource obj)))
+    (.isResource obj)    (str (.asResource obj))
+    :else                (str obj)))
+
 (defn statement->map
   "Converts a Jena statement into a map that looks like the following:
        {
@@ -46,9 +55,9 @@
        }
    This is the reverse of (map->statement)."
   [statement]
-  {:subject   (str (.getSubject statement))
-   :predicate (str (.getPredicate statement))
-   :object    (str (.getObject statement))})
+  {:subject   (str-repr (.getSubject statement))
+   :predicate (str-repr (.getPredicate statement))
+   :object    (str-repr (.getObject statement))})
 
 (defn statements
   "Returns a list of all statements in the model."
