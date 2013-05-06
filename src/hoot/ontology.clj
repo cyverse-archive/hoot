@@ -47,7 +47,8 @@
   "Lists all of the classes in the ontology. Classes are the types of the things
    defined in the ontology."
   [ont]
-  (seq (.toList (.listClasses ont))))
+  (filter #(and (.getLocalName %1) (.getNameSpace %1)) 
+          (seq (.toList (.listClasses ont)))))
 
 (defn sclass-seq
   [cls]
@@ -66,12 +67,19 @@
 (defn properties
   "Lists all of the properties defined in the ontology."
   [ont]
-  (seq (.toList (.listAllOntProperties ont))))
+  (filter #(and (.getLocalName %1) (.getNameSpace %1)) 
+          (seq (.toList (.listAllOntProperties ont)))))
+
+(defn listize
+  [iter]
+  (seq (.toList iter)))
 
 (defn prop-applies?
   "Returns true if one of the classes is a domain class for the property 'prp'."
   [classes prp]
-  (some #(.hasDomain prp %) classes))
+  (if-not (listize (.listDomain prp))
+    true
+    (some #(.hasDomain prp %) classes)))
 
 (defn possible-class-properties
   "Lists all of the applicable properties (a.k.a. predicates) that are available
