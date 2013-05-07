@@ -1,15 +1,13 @@
 (ns hoot.csv
   (:require [clojure.string :as string]))
 
+(def csv-types ["csv" "tsv"])
+
 (defn read-csv
   [instream & {:keys [separator] :or {separator #","}}]
   (mapv #(string/split %1 separator) (string/split-lines (slurp instream))))
 
 (defn read-tsv [instream] (read-csv instream :separator #"\t"))
-
-(defn extract-triples
-  [row]
-  ())
 
 (defn rows->triples
   [rows]
