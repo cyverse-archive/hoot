@@ -5,7 +5,8 @@
             :url "http://www.eclipse.org/legal/epl-v10.html"}
   :dependencies [[org.clojure/clojure "1.5.1"]
                  [org.apache.jena/jena-core "2.10.0"]
-                 [org.apache.jena/jena-arq "2.10.0"]
+                 [org.apache.jena/jena-arq "2.10.0"
+                  :exclusions [[org.slf4j/jcl-over-slf4j]]]
                  [org.clojure/data.csv "0.1.2"]
                  [com.cemerick/url "0.0.7"]]
   :profiles {:dev {:dependencies [[midje "1.4.0"]
