@@ -1,4 +1,4 @@
-(defproject hoot "0.1.0"
+(defproject org.iplantc/hoot "0.1.0"
   :description "A library for interactng with Apache Jena."
   :url "http://github.com/iPlantCollaborativeOpenSource/hoot"
   :license {:name "BSD Standard License"
